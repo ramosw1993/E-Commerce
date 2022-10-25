@@ -19,6 +19,7 @@ router.get("/", async (req, res) => {
       ],
     });
     res.status(200).json(tagData);
+
   } catch (err) {
     res.status(500).json(err);
   }
@@ -40,6 +41,7 @@ router.get("/:id", async (req, res) => {
       ],
     });
     res.status(200).json(tagData);
+
   } catch (err) {
     res.status(500).json({ message: `internal server error: ${err}` });
   }
@@ -54,6 +56,7 @@ router.post("/", async (req, res) => {
     }
     const tagData = await Tag.create(req.body);
     res.status(200).json(tagData);
+
   } catch (err) {
     res.status(500).json({ message: `internal server error: ${err}` });
   }
@@ -69,6 +72,7 @@ router.put("/:id", async (req, res) => {
     });
     await ProductTag.destroy({ where: { tag_id: req.params.id } });
     res.status(200).json(tagData);
+
   } catch (err) {
     res.status(500).json(err);
   }
@@ -81,6 +85,7 @@ router.delete("/:id", async (req, res) => {
       where: { id: req.params.id },
     });
     res.status(200).json(tagData);
+    
   } catch (err) {
     res.status(500).json(err);
   }
