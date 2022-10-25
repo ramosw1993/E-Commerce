@@ -4,7 +4,7 @@
 
 Built the back end for an e-commerce site by modifying starter code. Configured a working Express.js API to use Sequelize to interact with a MySQL database.
 
-Because this application =was not deployed, I provided a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met at the walk through section.
+Because this application was not deployed, I provided a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met at the walk through section.
 
 ## Installation
 
